@@ -13,19 +13,15 @@
 
         body {
             font-family: 'Prompt', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            background-color: #ffffff;
             color: #333;
             line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            width: 100%;
-            background-color: #ffffff;
             padding: 40px;
-            border-radius: 12px;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
         }
 
         h1 {
@@ -94,10 +90,6 @@
 
         @media (max-width: 768px) {
             body {
-                padding: 10px;
-            }
-
-            .container {
                 padding: 20px;
             }
 
@@ -116,7 +108,7 @@
                 font-size: 3em;
             }
 
-            .container {
+            body {
                 padding: 50px;
             }
 
@@ -128,103 +120,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>กฎการตอบเพจและคอมเมนต์ (เริ่ม 22 พฤษภาคม 2568)</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>ข้อที่</th>
-                    <th>หัวข้อ</th>
-                    <th>รายละเอียด</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td><strong>กรณีแชทหลุด / คอมเมนต์หลุด</strong></td>
-                    <td>
-                        <p><strong>ช่วงเวลา 08.00 - 00.00 น.:</strong> เจ้าของแชทและคนเวรวันนั้น <strong>ปรับ 100 บาท + งดตอบเวร 1 รอบ</strong></p>
-                        <p><strong>ช่วงเวลา 00.00 - 08.00 น.:</strong></p>
-                        <ul>
-                            <li><strong>มีเจ้าของแชท:</strong> ปรับเจ้าของแชท <strong>100 บาท - งดแย่งแชท 7 วัน</strong></li>
-                            <li><strong>ไม่มีเจ้าของแชท:</strong> ปรับรวมคนที่มาแย่งแชทช่วงวันนั้น <strong>100 บาท (หารกัน) - งดแย่งแชท 7 วัน</strong></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td><strong>การสตีลแชทที่มีเจ้าของ</strong></td>
-                    <td>
-                        <ul>
-                            <li>ต้อง <strong>แท็กเรียก</strong> ก่อน</li>
-                            <li>ถ้าไม่มีการมาตอบ <strong>สตีลได้นาทีที่ 11</strong></li>
-                            <li>กรณีพักเบรก / หยุด ให้ตอบตามสเต็ป ถ้าตอบไม่ได้ <strong>แจ้งแอดมินประสานงานทุกครั้ง</strong></li>
-                            <li>เริ่มสตีลแชทได้ตั้งแต่ <strong>10.00 น.</strong> เป็นต้นไป</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td><strong>การสตีลแชทและคอมเมนต์</strong></td>
-                    <td>
-                        <ul>
-                            <li>คนเวรตอบได้นาทีที่ <strong>1-10 นาที</strong></li>
-                            <li>นาทีที่ <strong>11 ขึ้นไป (ใครตอบก็ได้)</strong></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4.</td>
-                    <td><strong>การสำรวจคนตอบเวรกลางคืน</strong></td>
-                    <td>หัวหน้าเพจจะสำรวจคนที่ต้องการตอบเวรกลางคืน <strong>ก่อนจัดเวรทุกครั้ง</strong> ไม่มีบังคับ</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td><strong>กรณีวันหยุด</strong></td>
-                    <td>
-                        <ul>
-                            <li>ต้อง <strong>แท็กเรียกเพื่อน</strong> และตอบตามสเต็ป หรือให้แอดมินประสานงาน</li>
-                            <li>ถ้าแท็กเรียกแล้วเพื่อนไม่มา (วันหยุดเพื่อน) <strong>ให้โทรแจ้งเพื่อน</strong></li>
-                            <li>ถ้าเพื่อนยังไม่มาอีก <strong>แท็กเรียก 2 ครั้ง</strong> ถึงจะสตีลแชทได้</li>
-                            <li>คนแท็กเรียกคือคนโทร หรือแจ้งหัวหน้าเพจ/เพื่อนร่วมทีมช่วยโทร</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6.</td>
-                    <td><strong>การดึงคอมเมนต์มาตอบ</strong></td>
-                    <td>
-                        <ul>
-                            <li>ต้อง <strong>ตอบให้ตรงคำถาม</strong> และ <strong>ดึงไปแชท</strong></li>
-                            <li><strong>ห้ามพิมพ์แค่จุด</strong> ให้พิมพ์ข้อความ เช่น "แอดมินแต้วสวัสดีค่ะ"</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td><strong>การติดป้ายและยืนยันคำสั่งซื้อ</strong></td>
-                    <td>
-                        <ul>
-                            <li><strong>ต้องติดป้ายระยะข้อมูลลูกค้าทุกแชท</strong> และ <strong>กดยืนยันคำสั่งซื้อ</strong></li>
-                            <li>ถ้าไม่ติด/ไม่กดยืนยัน <strong>ปรับเงินแชทละ 20 บาท</strong></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td><strong>การตอบกลับแอดมิน</strong></td>
-                    <td>
-                        <ul>
-                            <li>ทุกครั้งที่แอดมินแจ้งให้ตอบแชท/คอมเมนต์ <strong>ต้องเข้าไปตอบทุกครั้ง</strong></li>
-                            <li>และ <strong>ตอบกลับแอดมินทุกครั้ง</strong> ที่ตอบแชท/คอมเมนต์แล้ว</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="note">
-            <strong>ข้อควรจำ:</strong> ไม่จงใจเปิดแชทและคอมเมนต์เพื่อรอสตีลนะครับ
-        </div>
+    <h1>กฎการตอบเพจและคอมเมนต์ (เริ่ม 22 พฤษภาคม 2568)</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ข้อที่</th>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td><strong>กรณีแชทหลุด / คอมเมนต์หลุด</strong></td>
+                <td>
+                    <p><strong>ช่วงเวลา 08.00 - 00.00 น.:</strong> เจ้าของแชทและคนเวรวันนั้น <strong>ปรับ 100 บาท + งดตอบเวร 1 รอบ</strong></p>
+                    <p><strong>ช่วงเวลา 00.00 - 08.00 น.:</strong></p>
+                    <ul>
+                        <li><strong>มีเจ้าของแชท:</strong> ปรับเจ้าของแชท <strong>100 บาท - งดแย่งแชท 7 วัน</strong></li>
+                        <li><strong>ไม่มีเจ้าของแชท:</strong> ปรับรวมคนที่มาแย่งแชทช่วงวันนั้น <strong>100 บาท (หารกัน) - งดแย่งแชท 7 วัน</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><strong>การสตีลแชทที่มีเจ้าของ</strong></td>
+                <td>
+                    <ul>
+                        <li>ต้อง <strong>แท็กเรียก</strong> ก่อน</li>
+                        <li>ถ้าไม่มีการมาตอบ <strong>สตีลได้นาทีที่ 11</strong></li>
+                        <li>กรณีพักเบรก / หยุด ให้ตอบตามสเต็ป ถ้าตอบไม่ได้ <strong>แจ้งแอดมินประสานงานทุกครั้ง</strong></li>
+                        <li>เริ่มสตีลแชทได้ตั้งแต่ <strong>10.00 น.</strong> เป็นต้นไป</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><strong>การสตีลแชทและคอมเมนต์</strong></td>
+                <td>
+                    <ul>
+                        <li>คนเวรตอบได้นาทีที่ <strong>1-10 นาที</strong></li>
+                        <li>นาทีที่ <strong>11 ขึ้นไป (ใครตอบก็ได้)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td><strong>การสำรวจคนตอบเวรกลางคืน</strong></td>
+                <td>หัวหน้าเพจจะสำรวจคนที่ต้องการตอบเวรกลางคืน <strong>ก่อนจัดเวรทุกครั้ง</strong> ไม่มีบังคับ</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td><strong>กรณีวันหยุด</strong></td>
+                <td>
+                    <ul>
+                        <li>ต้อง <strong>แท็กเรียกเพื่อน</strong> และตอบตามสเต็ป หรือให้แอดมินประสานงาน</li>
+                        <li>ถ้าแท็กเรียกแล้วเพื่อนไม่มา (วันหยุดเพื่อน) <strong>ให้โทรแจ้งเพื่อน</strong></li>
+                        <li>ถ้าเพื่อนยังไม่มาอีก <strong>แท็กเรียก 2 ครั้ง</strong> ถึงจะสตีลแชทได้</li>
+                        <li>คนแท็กเรียกคือคนโทร หรือแจ้งหัวหน้าเพจ/เพื่อนร่วมทีมช่วยโทร</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td><strong>การดึงคอมเมนต์มาตอบ</strong></td>
+                <td>
+                    <ul>
+                        <li>ต้อง <strong>ตอบให้ตรงคำถาม</strong> และ <strong>ดึงไปแชท</strong></li>
+                        <li><strong>ห้ามพิมพ์แค่จุด</strong> ให้พิมพ์ข้อความ เช่น "แอดมินแต้วสวัสดีค่ะ"</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td><strong>การติดป้ายและยืนยันคำสั่งซื้อ</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>ต้องติดป้ายระยะข้อมูลลูกค้าทุกแชท</strong> และ <strong>กดยืนยันคำสั่งซื้อ</strong></li>
+                        <li>ถ้าไม่ติด/ไม่กดยืนยัน <strong>ปรับเงินแชทละ 20 บาท</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td><strong>การตอบกลับแอดมิน</strong></td>
+                <td>
+                    <ul>
+                        <li>ทุกครั้งที่แอดมินแจ้งให้ตอบแชท/คอมเมนต์ <strong>ต้องเข้าไปตอบทุกครั้ง</strong></li>
+                        <li>และ <strong>ตอบกลับแอดมินทุกครั้ง</strong> ที่ตอบแชท/คอมเมนต์แล้ว</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="note">
+        <strong>ข้อควรจำ:</strong> ไม่จงใจเปิดแชทและคอมเมนต์เพื่อรอสตีลนะครับ
     </div>
 </body>
 </html>
